@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>**javascript template**</title>
+  <title>set aos sample</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
 
@@ -12,19 +12,96 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" fetchpriority="high"
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" >
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- AOS-CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- オリジナル -->
   <link rel="stylesheet" href="css/reset.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+
+  <!-- AOS-CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
   <!-- javascript -->
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-
+  <main class="p-main js-aos-wrapper">
+    <ul class="p-grid">
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="fade">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="fade-up">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="fade-down">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="fade-left">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="fade-right">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="flip-up">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="flip-down">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="flip-left">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="flip-right">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="slide-up">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="slide-down">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="slide-left">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="slide-right">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-in">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-in-up">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-in-down">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-in-left">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-in-right">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-out">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-out-up">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-out-down">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-out-left">
+      </li>
+      <li class="p-grid__item">
+        <img src="./images/fuji.jpg" alt="サンプル画像" class="p-grid__iamge" data-aos="zoom-out-right">
+      </li>
+    </ul>
+  </main>
 </body>
 
 </html>

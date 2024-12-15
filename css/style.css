@@ -1,1 +1,17 @@
 @charset "UTF-8";
+
+.p-main {
+  display: grid;
+  grid-template: ". main ." / 1rem 1fr 1rem;
+  justify-items: center;
+  width: 100%;
+  padding: 10rem;
+}
+
+.p-grid {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20rem 10rem;
+  width: min(100%, 30rem);
+}
