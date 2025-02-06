@@ -4,14 +4,6 @@
 // GitHub: github.com/michalsnik/aos
 // ※オプション設定等は上記参照
 // ------------------------------------------
-/** 使用条件（HTMLの設定）
-  1.  AOSを使用する場合を想定。(CDNとファイルを保持する形どちらも対応)
-
-  2.  AOSを設定したコンテンツの配置が変わった場合に発火タイミングがずれる対策
-      ->ウィンドウのリサイズ発生時にAOS.refresh()を実行
-  ------------------------------------------*/
-/*
-  ------------------------------------------*/
 class SetAosSettings {
   static AOS_OPTIONS = {
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
