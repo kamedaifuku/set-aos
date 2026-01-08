@@ -21,7 +21,7 @@ class SetAosSettings {
   constructor() {
     this.initAOS();
     this.resizeTimeout;
-    this.initEventListener();
+    this.initRsizeObserver();
   }
 
   // AOS初期化
@@ -29,12 +29,18 @@ class SetAosSettings {
     AOS.init(SetAosSettings.AOS_OPTIONS); // eslint-disable-line
   }
 
-  // windowのリサイズ検知時にAOSのリフレッシュを実施
-  initEventListener() {
-    window.addEventListener('resize', () => {
-      clearTimeout(this.resizeTimeout); // デバウンス処理
-      this.resizeTimeout = setTimeout(() => AOS.refresh(), SetAosSettings.DEBOUNCE_TIME); // eslint-disable-line
-    });
+  // resizeオブザーバーの設定
+  initRsizeObserver() {
+    const callback = (entries) => {
+      entries.forEach(() => {
+        clearTimeout(this.resizeTimeout); // デバウンス処理
+        this.resizeTimeout = setTimeout(() => {
+          AOS.refresh(); // eslint-disable-line
+        }, SetAosSettings.DEBOUNCE_TIME);
+      });
+    };
+    const resizeObserver = new ResizeObserver(callback);
+    resizeObserver.observe(document.body);
   }
 }
 
